@@ -2,6 +2,18 @@
 
 This project enables real-time object detection on a livestream from Meta Ray-Ban AI Glasses using YOLOv8 Nano on a Mac M1. The glasses stream video to Instagram, which is then captured and processed on the Mac to identify objects in the user's field of view. Originally intended to assist with Arduino projects by identifying components, the current focus is on the vision system, with potential for future expansion.
 
+## Clone the Repository
+
+```bash
+# Clone with HTTPS
+git clone https://github.com/ghsaboias/glasses-ai.git
+
+# Or clone with SSH
+git clone git@github.com:ghsaboias/glasses-ai.git
+
+cd glasses-ai
+```
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -38,21 +50,19 @@ The goal of this project is to create a real-time AI assistant that processes th
 
 ### 1. Set Up the Environment
 
-Install uv if not already installed.
-Create a project directory and initialize a virtual environment:
+Make sure you have Python 3.8+ and uv installed, then:
 
 ```bash
-mkdir glasses-ai
+# Clone and enter the repository
+git clone https://github.com/ghsaboias/glasses-ai.git
 cd glasses-ai
-uv init
+
+# Create and activate virtual environment
 uv venv
 source .venv/bin/activate
-```
 
-Install required packages:
-
-```bash
-uv add ultralytics opencv-python numpy mss
+# Install dependencies
+uv pip install -r requirements.txt
 ```
 
 ### 2. Configure the Livestream
