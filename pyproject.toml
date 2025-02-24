@@ -1,0 +1,12 @@
+[project]
+name = "glasses-ai"
+version = "0.1.0"
+description = "Real-time object detection system using Meta Ray-Ban AI Glasses and YOLOv8 Nano, processing Instagram livestream for visual analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mss>=10.0.0",
+    "numpy>=2.1.1",
+    "opencv-python>=4.11.0.86",
+    "ultralytics>=8.3.78",
+]
